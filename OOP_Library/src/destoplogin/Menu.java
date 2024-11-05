@@ -26,35 +26,44 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabelTitleThuVien = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButtonTongQuan = new javax.swing.JButton();
+        jButtonSach = new javax.swing.JButton();
+        jButtonBanDoc = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(720, 450));
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jLabel1.setText("THƯ VIỆN");
+        jLabelTitleThuVien.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        jLabelTitleThuVien.setText("THƯ VIỆN");
 
         jPanel1.setBackground(new java.awt.Color(224, 224, 224));
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
 
-        jButton1.setText("jButton1");
-        jButton1.setMaximumSize(new java.awt.Dimension(100, 23));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonTongQuan.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonTongQuan.setText("Tổng quan");
+        jButtonTongQuan.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonTongQuan.setMaximumSize(new java.awt.Dimension(150, 30));
+        jButtonTongQuan.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jButtonTongQuan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonTongQuanActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
+        jPanel1.add(jButtonTongQuan);
 
-        jButton2.setText("jButton2");
-        jPanel1.add(jButton2);
+        jButtonSach.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonSach.setText("Sách");
+        jButtonSach.setMaximumSize(new java.awt.Dimension(150, 30));
+        jButtonSach.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(jButtonSach);
 
-        jButton3.setText("jButton3");
-        jPanel1.add(jButton3);
+        jButtonBanDoc.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonBanDoc.setText("Bạn đọc");
+        jButtonBanDoc.setMaximumSize(new java.awt.Dimension(150, 30));
+        jButtonBanDoc.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(jButtonBanDoc);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,17 +71,17 @@ public class Menu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(294, 294, 294)
-                .addComponent(jLabel1)
+                .addComponent(jLabelTitleThuVien)
                 .addContainerGap(326, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelTitleThuVien, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE))
         );
@@ -80,9 +89,9 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonTongQuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTongQuanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonTongQuanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -120,10 +129,10 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButtonBanDoc;
+    private javax.swing.JButton jButtonSach;
+    private javax.swing.JButton jButtonTongQuan;
+    private javax.swing.JLabel jLabelTitleThuVien;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
