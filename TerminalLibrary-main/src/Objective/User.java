@@ -8,6 +8,10 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
+import DatabaseConnector.DBRequest;
+import DatabaseConnector.DBUser;
+import DatabaseConnector.DBLogin;
+
 public class User {
     public final static int SET_STUDENT = 0;
     public final static int SET_ADMIN = 1;

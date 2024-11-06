@@ -1,5 +1,6 @@
 package Objective;
 
+import DatabaseConnector.DBBook;
 import java.sql.SQLException;
 
 

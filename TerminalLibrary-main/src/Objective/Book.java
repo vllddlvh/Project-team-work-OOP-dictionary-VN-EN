@@ -1,5 +1,6 @@
 package Objective;
 
+import DatabaseConnector.DBBook;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -87,8 +88,4 @@ public class Book {
         
         return found;
     } 
-    
-    public void oneTimeOpenBook() {
-        UpdateFile.oneTimeOpenBook(this.id);
-    }
 }
