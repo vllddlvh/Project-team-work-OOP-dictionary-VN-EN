@@ -2,21 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package destoplogin;
-import javax.swing.JButton;
-import javax.swing.*;
-import java.awt.event.*;
-import java.awt.*;
+package view;
+
 /**
  *
  * @author ADMIN
  */
-public class Login extends javax.swing.JFrame {
+public class GDlogin extends javax.swing.JFrame {
 
     /**
-     * Creates new form Login
+     * Creates new form GDlogin
      */
-    public Login() {
+    public GDlogin() {
         initComponents();
     }
 
@@ -29,31 +26,15 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButtonOKdangnhap = new javax.swing.JButton();
+        imageLogoUET = new javax.swing.JLabel();
+        jPasswordField = new javax.swing.JPasswordField();
         jLabelDangNhap = new javax.swing.JLabel();
         textFieldTaiKhoan = new javax.swing.JTextField();
         jLabelTaiKhoan = new javax.swing.JLabel();
         jLabelMatKhau = new javax.swing.JLabel();
-        jButtonOKdangnhap = new javax.swing.JButton();
-        imageLogoUET = new javax.swing.JLabel();
-        jPasswordField = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Login");
-
-        jLabelDangNhap.setFont(new java.awt.Font("Calibri", 1, 20)); // NOI18N
-        jLabelDangNhap.setText("ĐĂNG NHẬP");
-
-        textFieldTaiKhoan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textFieldTaiKhoanActionPerformed(evt);
-            }
-        });
-
-        jLabelTaiKhoan.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
-        jLabelTaiKhoan.setText("Tài Khoản:");
-
-        jLabelMatKhau.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
-        jLabelMatKhau.setText("Mật Khẩu:");
 
         jButtonOKdangnhap.setBackground(new java.awt.Color(204, 204, 204));
         jButtonOKdangnhap.setText("OK");
@@ -72,6 +53,21 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        jLabelDangNhap.setFont(new java.awt.Font("Calibri", 1, 20)); // NOI18N
+        jLabelDangNhap.setText("ĐĂNG NHẬP");
+
+        textFieldTaiKhoan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldTaiKhoanActionPerformed(evt);
+            }
+        });
+
+        jLabelTaiKhoan.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
+        jLabelTaiKhoan.setText("Tài Khoản:");
+
+        jLabelMatKhau.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
+        jLabelMatKhau.setText("Mật Khẩu:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -79,32 +75,29 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(jButtonOKdangnhap))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
+                        .addGap(45, 45, 45)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabelTaiKhoan)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(textFieldTaiKhoan, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(imageLogoUET, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabelTaiKhoan)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabelMatKhau)
-                                        .addGap(7, 7, 7)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jPasswordField)
-                                    .addComponent(textFieldTaiKhoan, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))))
+                                .addComponent(jLabelMatKhau)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(jLabelDangNhap)))
-                .addContainerGap(54, Short.MAX_VALUE))
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabelDangNhap))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(jButtonOKdangnhap)))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
+                .addGap(24, 24, 24)
                 .addComponent(imageLogoUET)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelDangNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -115,10 +108,10 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelMatKhau)
-                    .addComponent(jPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(jButtonOKdangnhap)
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addGap(76, 76, 76))
         );
 
         pack();
@@ -126,16 +119,16 @@ public class Login extends javax.swing.JFrame {
 
     private void jButtonOKdangnhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOKdangnhapActionPerformed
         // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jButtonOKdangnhapActionPerformed
 
-    private void textFieldTaiKhoanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldTaiKhoanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textFieldTaiKhoanActionPerformed
+    }//GEN-LAST:event_jButtonOKdangnhapActionPerformed
 
     private void jPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordFieldActionPerformed
+
+    private void textFieldTaiKhoanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldTaiKhoanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldTaiKhoanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,20 +147,20 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GDlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GDlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GDlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GDlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new GDlogin().setVisible(true);
             }
         });
     }
