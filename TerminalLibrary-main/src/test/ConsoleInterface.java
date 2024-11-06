@@ -4,6 +4,8 @@ package test;
 import Objective.Student;
 import Objective.Request;
 import Objective.Book;
+import DatabaseConnector.DatabaseConnector;
+import DatabaseConnector.UpdateFile;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -31,6 +33,7 @@ public class ConsoleInterface {
      public static void main(String[] args) {
          
         try {
+            DatabaseConnector.firstTODO();
 
             int temp = RE_RUN;
             while (temp == RE_RUN) {
@@ -49,6 +52,7 @@ public class ConsoleInterface {
         }
         finally {
             // Close things in the end.
+            DatabaseConnector.closeConnection();
             sc.close();
         }
     }
@@ -347,7 +351,7 @@ public class ConsoleInterface {
             switch (input) {
                 case 1 -> {
                     // Try to read once
-                    b.oneTimeOpenBook();
+                    UpdateFile.oneTimeOpenBook(b.getBookId());
                     return EXIT;
                 }
                 case 2 -> {

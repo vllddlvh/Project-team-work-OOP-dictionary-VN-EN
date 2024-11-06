@@ -1,0 +1,29 @@
+DELIMITER //
+DROP PROCEDURE IF EXISTS findStudent;
+CREATE PROCEDURE findStudent (IN ID VARCHAR(10))
+BEGIN
+	SELECT * FROM Students
+    WHERE userID = ID;
+END;
+// DELIMITER ;
+
+DELIMITER //
+DROP PROCEDURE IF EXISTS changeUserName;
+CREATE PROCEDURE changeUserName (IN ID VARCHAR(10), newName VARCHAR(50))
+BEGIN
+	UPDATE Students
+    SET userName = newName
+    WHERE userID = ID;
+END;
+// DELIMITER ;
+
+
+DELIMITER //
+DROP PROCEDURE IF EXISTS changeContact;
+CREATE PROCEDURE changeContact (IN ID VARCHAR(10), newContact VARCHAR(50))
+BEGIN
+	UPDATE Students
+    SET contact = newContact
+    WHERE userID = ID;
+END;
+// DELIMITER ;
